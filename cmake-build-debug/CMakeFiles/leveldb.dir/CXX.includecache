@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/leveldb/export.h
+
+../include/leveldb/slice.h
+assert.h
+-
+stddef.h
+-
+string.h
+-
+string
+-
+leveldb/export.h
+../include/leveldb/leveldb/export.h
+
+/home/rui/Git/leveldb/value_index/kdtree.h
+
+/home/rui/Git/leveldb/value_index/value_index.cpp
+cstdlib
+-
+iostream
+-
+value_index.h
+/home/rui/Git/leveldb/value_index/value_index.h
+regex
+-
+
+/home/rui/Git/leveldb/value_index/value_index.h
+kdtree.h
+/home/rui/Git/leveldb/value_index/kdtree.h
+vector
+-
+string
+-
+leveldb/slice.h
+/home/rui/Git/leveldb/value_index/leveldb/slice.h
+

@@ -1,0 +1,6 @@
+/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/index_test.dir
+/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/db_test.dir
+/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/leveldb.dir
+/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/leveldbutil.dir

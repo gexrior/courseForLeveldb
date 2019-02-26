@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/index_test.dir/value_index/index_test.cpp.o  -o index_test libleveldb.a -lpthread 

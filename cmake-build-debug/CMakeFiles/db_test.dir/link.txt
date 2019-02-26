@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/db_test.dir/test/db_test.cc.o  -o db_test libleveldb.a -lpthread 
