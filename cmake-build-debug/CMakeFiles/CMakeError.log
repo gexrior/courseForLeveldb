@@ -1,87 +1,87 @@
 Determining if the function crc32c_value exists in the crc32c failed with the following output:
-Change Dir: /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1ca66/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1ca66.dir/build.make CMakeFiles/cmTC_1ca66.dir/build
-make[1]: Entering directory '/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1ca66.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=crc32c_value   -std=c11 -o CMakeFiles/cmTC_1ca66.dir/CheckFunctionExists.c.o   -c /home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
-Linking C executable cmTC_1ca66
-/home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ca66.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=crc32c_value    CMakeFiles/cmTC_1ca66.dir/CheckFunctionExists.c.o  -o cmTC_1ca66 -lcrc32c 
+Run Build Command:"/usr/bin/make" "cmTC_b7550/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b7550.dir/build.make CMakeFiles/cmTC_b7550.dir/build
+make[1]: Entering directory '/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b7550.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=crc32c_value   -std=c11 -o CMakeFiles/cmTC_b7550.dir/CheckFunctionExists.c.o   -c /home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b7550
+/home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7550.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=crc32c_value    CMakeFiles/cmTC_b7550.dir/CheckFunctionExists.c.o  -o cmTC_b7550 -lcrc32c 
 /usr/bin/ld: 找不到 -lcrc32c
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_1ca66.dir/build.make:86: recipe for target 'cmTC_1ca66' failed
-make[1]: *** [cmTC_1ca66] Error 1
-make[1]: Leaving directory '/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_1ca66/fast' failed
-make: *** [cmTC_1ca66/fast] Error 2
+CMakeFiles/cmTC_b7550.dir/build.make:86: recipe for target 'cmTC_b7550' failed
+make[1]: *** [cmTC_b7550] Error 1
+make[1]: Leaving directory '/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_b7550/fast' failed
+make: *** [cmTC_b7550/fast] Error 2
 
 
 Determining if the function snappy_compress exists in the snappy failed with the following output:
-Change Dir: /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_63566/fast"
-/usr/bin/make -f CMakeFiles/cmTC_63566.dir/build.make CMakeFiles/cmTC_63566.dir/build
-make[1]: Entering directory '/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_63566.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=snappy_compress   -std=c11 -o CMakeFiles/cmTC_63566.dir/CheckFunctionExists.c.o   -c /home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
-Linking C executable cmTC_63566
-/home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63566.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=snappy_compress    CMakeFiles/cmTC_63566.dir/CheckFunctionExists.c.o  -o cmTC_63566 -lsnappy 
+Run Build Command:"/usr/bin/make" "cmTC_d677f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d677f.dir/build.make CMakeFiles/cmTC_d677f.dir/build
+make[1]: Entering directory '/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d677f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=snappy_compress   -std=c11 -o CMakeFiles/cmTC_d677f.dir/CheckFunctionExists.c.o   -c /home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d677f
+/home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d677f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=snappy_compress    CMakeFiles/cmTC_d677f.dir/CheckFunctionExists.c.o  -o cmTC_d677f -lsnappy 
 /usr/bin/ld: 找不到 -lsnappy
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_63566.dir/build.make:86: recipe for target 'cmTC_63566' failed
-make[1]: *** [cmTC_63566] Error 1
-make[1]: Leaving directory '/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_63566/fast' failed
-make: *** [cmTC_63566/fast] Error 2
+CMakeFiles/cmTC_d677f.dir/build.make:86: recipe for target 'cmTC_d677f' failed
+make[1]: *** [cmTC_d677f] Error 1
+make[1]: Leaving directory '/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_d677f/fast' failed
+make: *** [cmTC_d677f/fast] Error 2
 
 
 Determining if the function malloc exists in the tcmalloc failed with the following output:
-Change Dir: /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_779e2/fast"
-/usr/bin/make -f CMakeFiles/cmTC_779e2.dir/build.make CMakeFiles/cmTC_779e2.dir/build
-make[1]: Entering directory '/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_779e2.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=malloc   -std=c11 -o CMakeFiles/cmTC_779e2.dir/CheckFunctionExists.c.o   -c /home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Run Build Command:"/usr/bin/make" "cmTC_4e511/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4e511.dir/build.make CMakeFiles/cmTC_4e511.dir/build
+make[1]: Entering directory '/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4e511.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=malloc   -std=c11 -o CMakeFiles/cmTC_4e511.dir/CheckFunctionExists.c.o   -c /home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
 <command-line>:0:23: warning: conflicting types for built-in function ‘malloc’
 /home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
    CHECK_FUNCTION_EXISTS(void);
    ^
-Linking C executable cmTC_779e2
-/home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_779e2.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=malloc    CMakeFiles/cmTC_779e2.dir/CheckFunctionExists.c.o  -o cmTC_779e2 -ltcmalloc 
+Linking C executable cmTC_4e511
+/home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e511.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=malloc    CMakeFiles/cmTC_4e511.dir/CheckFunctionExists.c.o  -o cmTC_4e511 -ltcmalloc 
 /usr/bin/ld: 找不到 -ltcmalloc
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_779e2.dir/build.make:86: recipe for target 'cmTC_779e2' failed
-make[1]: *** [cmTC_779e2] Error 1
-make[1]: Leaving directory '/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_779e2/fast' failed
-make: *** [cmTC_779e2/fast] Error 2
+CMakeFiles/cmTC_4e511.dir/build.make:86: recipe for target 'cmTC_4e511' failed
+make[1]: *** [cmTC_4e511] Error 1
+make[1]: Leaving directory '/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_4e511/fast' failed
+make: *** [cmTC_4e511/fast] Error 2
 
 
 Determining if the fdatasync exist failed with the following output:
-Change Dir: /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fca1e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fca1e.dir/build.make CMakeFiles/cmTC_fca1e.dir/build
-make[1]: Entering directory '/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fca1e.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_fca1e.dir/CheckSymbolExists.c.o   -c /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
-/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘fdatasync’ undeclared (first use in this function)
+Run Build Command:"/usr/bin/make" "cmTC_fd11c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fd11c.dir/build.make CMakeFiles/cmTC_fd11c.dir/build
+make[1]: Entering directory '/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fd11c.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_fd11c.dir/CheckSymbolExists.c.o   -c /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘fdatasync’ undeclared (first use in this function)
    return ((int*)(&fdatasync))[argc];
                    ^
-/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
-CMakeFiles/cmTC_fca1e.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_fca1e.dir/CheckSymbolExists.c.o' failed
-make[1]: *** [CMakeFiles/cmTC_fca1e.dir/CheckSymbolExists.c.o] Error 1
-make[1]: Leaving directory '/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_fca1e/fast' failed
-make: *** [cmTC_fca1e/fast] Error 2
+/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_fd11c.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_fd11c.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_fd11c.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_fd11c/fast' failed
+make: *** [cmTC_fd11c/fast] Error 2
 
-File /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <unistd.h>
 
@@ -97,31 +97,31 @@ int main(int argc, char** argv)
 }
 
 Performing C++ SOURCE FILE Test HAVE_CLANG_THREAD_SAFETY failed with the following output:
-Change Dir: /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_718ed/fast"
-/usr/bin/make -f CMakeFiles/cmTC_718ed.dir/build.make CMakeFiles/cmTC_718ed.dir/build
-make[1]: Entering directory '/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_718ed.dir/src.cxx.o
-/usr/bin/c++    -DHAVE_CLANG_THREAD_SAFETY -Werror   -std=c++11 -o CMakeFiles/cmTC_718ed.dir/src.cxx.o -c /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
-/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx:2:34: error: ‘lockable’ attribute directive ignored [-Werror=attributes]
+Run Build Command:"/usr/bin/make" "cmTC_22003/fast"
+/usr/bin/make -f CMakeFiles/cmTC_22003.dir/build.make CMakeFiles/cmTC_22003.dir/build
+make[1]: Entering directory '/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_22003.dir/src.cxx.o
+/usr/bin/c++    -DHAVE_CLANG_THREAD_SAFETY -Werror   -std=c++11 -o CMakeFiles/cmTC_22003.dir/src.cxx.o -c /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx:2:34: error: ‘lockable’ attribute directive ignored [-Werror=attributes]
  struct __attribute__((lockable)) Lock {
                                   ^
-/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx:3:59: error: ‘exclusive_lock_function’ attribute directive ignored [-Werror=attributes]
+/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx:3:59: error: ‘exclusive_lock_function’ attribute directive ignored [-Werror=attributes]
    void Acquire() __attribute__((exclusive_lock_function()));
                                                            ^
-/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx:4:51: error: ‘unlock_function’ attribute directive ignored [-Werror=attributes]
+/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx:4:51: error: ‘unlock_function’ attribute directive ignored [-Werror=attributes]
    void Release() __attribute__((unlock_function()));
                                                    ^
-/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx:8:46: error: ‘guarded_by’ attribute directive ignored [-Werror=attributes]
+/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx:8:46: error: ‘guarded_by’ attribute directive ignored [-Werror=attributes]
    int data_ __attribute__((guarded_by(lock_)));
                                               ^
 cc1plus: all warnings being treated as errors
-CMakeFiles/cmTC_718ed.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_718ed.dir/src.cxx.o' failed
-make[1]: *** [CMakeFiles/cmTC_718ed.dir/src.cxx.o] Error 1
-make[1]: Leaving directory '/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_718ed/fast' failed
-make: *** [cmTC_718ed/fast] Error 2
+CMakeFiles/cmTC_22003.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_22003.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_22003.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_22003/fast' failed
+make: *** [cmTC_22003/fast] Error 2
 
 Source file was:
 
@@ -136,26 +136,26 @@ struct ThreadSafeType {
 int main() { return 0; }
 
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d383f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d383f.dir/build.make CMakeFiles/cmTC_d383f.dir/build
-make[1]: Entering directory '/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d383f.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_d383f.dir/CheckSymbolExists.c.o   -c /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_d383f
-/home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d383f.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_d383f.dir/CheckSymbolExists.c.o  -o cmTC_d383f 
-CMakeFiles/cmTC_d383f.dir/CheckSymbolExists.c.o：在函数‘main’中：
+Run Build Command:"/usr/bin/make" "cmTC_89e4b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_89e4b.dir/build.make CMakeFiles/cmTC_89e4b.dir/build
+make[1]: Entering directory '/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_89e4b.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_89e4b.dir/CheckSymbolExists.c.o   -c /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_89e4b
+/home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89e4b.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_89e4b.dir/CheckSymbolExists.c.o  -o cmTC_89e4b 
+CMakeFiles/cmTC_89e4b.dir/CheckSymbolExists.c.o：在函数‘main’中：
 CheckSymbolExists.c:(.text+0x16)：对‘pthread_create’未定义的引用
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_d383f.dir/build.make:86: recipe for target 'cmTC_d383f' failed
-make[1]: *** [cmTC_d383f] Error 1
-make[1]: Leaving directory '/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_d383f/fast' failed
-make: *** [cmTC_d383f/fast] Error 2
+CMakeFiles/cmTC_89e4b.dir/build.make:86: recipe for target 'cmTC_89e4b' failed
+make[1]: *** [cmTC_89e4b] Error 1
+make[1]: Leaving directory '/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_89e4b/fast' failed
+make: *** [cmTC_89e4b/fast] Error 2
 
-File /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -171,22 +171,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_36489/fast"
-/usr/bin/make -f CMakeFiles/cmTC_36489.dir/build.make CMakeFiles/cmTC_36489.dir/build
-make[1]: Entering directory '/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_36489.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -std=c11 -o CMakeFiles/cmTC_36489.dir/CheckFunctionExists.c.o   -c /home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
-Linking C executable cmTC_36489
-/home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36489.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_36489.dir/CheckFunctionExists.c.o  -o cmTC_36489 -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_37c49/fast"
+/usr/bin/make -f CMakeFiles/cmTC_37c49.dir/build.make CMakeFiles/cmTC_37c49.dir/build
+make[1]: Entering directory '/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_37c49.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -std=c11 -o CMakeFiles/cmTC_37c49.dir/CheckFunctionExists.c.o   -c /home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_37c49
+/home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37c49.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_37c49.dir/CheckFunctionExists.c.o  -o cmTC_37c49 -lpthreads 
 /usr/bin/ld: 找不到 -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_36489.dir/build.make:86: recipe for target 'cmTC_36489' failed
-make[1]: *** [cmTC_36489] Error 1
-make[1]: Leaving directory '/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_36489/fast' failed
-make: *** [cmTC_36489/fast] Error 2
+CMakeFiles/cmTC_37c49.dir/build.make:86: recipe for target 'cmTC_37c49' failed
+make[1]: *** [cmTC_37c49] Error 1
+make[1]: Leaving directory '/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_37c49/fast' failed
+make: *** [cmTC_37c49/fast] Error 2
 
 

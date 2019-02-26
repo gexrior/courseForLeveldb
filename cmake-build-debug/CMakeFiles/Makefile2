@@ -59,82 +59,45 @@ RM = /home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/bin/cmake -E remove
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rui/Git/leveldb
+CMAKE_SOURCE_DIR = /home/rui/Git/courseForLeveldb
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rui/Git/leveldb/cmake-build-debug
+CMAKE_BINARY_DIR = /home/rui/Git/courseForLeveldb/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/index_test.dir
+# Target rules for target CMakeFiles/leveldbutil.dir
 
 # All Build rule for target.
-CMakeFiles/index_test.dir/all: CMakeFiles/leveldb.dir/all
-	$(MAKE) -f CMakeFiles/index_test.dir/build.make CMakeFiles/index_test.dir/depend
-	$(MAKE) -f CMakeFiles/index_test.dir/build.make CMakeFiles/index_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target index_test"
-.PHONY : CMakeFiles/index_test.dir/all
+CMakeFiles/leveldbutil.dir/all: CMakeFiles/leveldb.dir/all
+	$(MAKE) -f CMakeFiles/leveldbutil.dir/build.make CMakeFiles/leveldbutil.dir/depend
+	$(MAKE) -f CMakeFiles/leveldbutil.dir/build.make CMakeFiles/leveldbutil.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles --progress-num=50,51 "Built target leveldbutil"
+.PHONY : CMakeFiles/leveldbutil.dir/all
 
 # Include target in all.
-all: CMakeFiles/index_test.dir/all
+all: CMakeFiles/leveldbutil.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/index_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles 43
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/index_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/index_test.dir/rule
+CMakeFiles/leveldbutil.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles 43
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/leveldbutil.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/leveldbutil.dir/rule
 
 # Convenience name for target.
-index_test: CMakeFiles/index_test.dir/rule
+leveldbutil: CMakeFiles/leveldbutil.dir/rule
 
-.PHONY : index_test
-
-# clean rule for target.
-CMakeFiles/index_test.dir/clean:
-	$(MAKE) -f CMakeFiles/index_test.dir/build.make CMakeFiles/index_test.dir/clean
-.PHONY : CMakeFiles/index_test.dir/clean
+.PHONY : leveldbutil
 
 # clean rule for target.
-clean: CMakeFiles/index_test.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/db_test.dir
-
-# All Build rule for target.
-CMakeFiles/db_test.dir/all: CMakeFiles/leveldb.dir/all
-	$(MAKE) -f CMakeFiles/db_test.dir/build.make CMakeFiles/db_test.dir/depend
-	$(MAKE) -f CMakeFiles/db_test.dir/build.make CMakeFiles/db_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target db_test"
-.PHONY : CMakeFiles/db_test.dir/all
-
-# Include target in all.
-all: CMakeFiles/db_test.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/db_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles 43
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/db_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/db_test.dir/rule
-
-# Convenience name for target.
-db_test: CMakeFiles/db_test.dir/rule
-
-.PHONY : db_test
+CMakeFiles/leveldbutil.dir/clean:
+	$(MAKE) -f CMakeFiles/leveldbutil.dir/build.make CMakeFiles/leveldbutil.dir/clean
+.PHONY : CMakeFiles/leveldbutil.dir/clean
 
 # clean rule for target.
-CMakeFiles/db_test.dir/clean:
-	$(MAKE) -f CMakeFiles/db_test.dir/build.make CMakeFiles/db_test.dir/clean
-.PHONY : CMakeFiles/db_test.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/db_test.dir/clean
+clean: CMakeFiles/leveldbutil.dir/clean
 
 .PHONY : clean
 
@@ -145,7 +108,7 @@ clean: CMakeFiles/db_test.dir/clean
 CMakeFiles/leveldb.dir/all:
 	$(MAKE) -f CMakeFiles/leveldb.dir/build.make CMakeFiles/leveldb.dir/depend
 	$(MAKE) -f CMakeFiles/leveldb.dir/build.make CMakeFiles/leveldb.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45 "Built target leveldb"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles --progress-num=9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49 "Built target leveldb"
 .PHONY : CMakeFiles/leveldb.dir/all
 
 # Include target in all.
@@ -155,9 +118,9 @@ all: CMakeFiles/leveldb.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/leveldb.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles 41
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/leveldb.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/leveldb.dir/rule
 
 # Convenience name for target.
@@ -176,39 +139,150 @@ clean: CMakeFiles/leveldb.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/leveldbutil.dir
+# Target rules for target CMakeFiles/db_test.dir
 
 # All Build rule for target.
-CMakeFiles/leveldbutil.dir/all: CMakeFiles/leveldb.dir/all
-	$(MAKE) -f CMakeFiles/leveldbutil.dir/build.make CMakeFiles/leveldbutil.dir/depend
-	$(MAKE) -f CMakeFiles/leveldbutil.dir/build.make CMakeFiles/leveldbutil.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles --progress-num=46,47 "Built target leveldbutil"
-.PHONY : CMakeFiles/leveldbutil.dir/all
+CMakeFiles/db_test.dir/all: CMakeFiles/leveldb.dir/all
+	$(MAKE) -f CMakeFiles/db_test.dir/build.make CMakeFiles/db_test.dir/depend
+	$(MAKE) -f CMakeFiles/db_test.dir/build.make CMakeFiles/db_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target db_test"
+.PHONY : CMakeFiles/db_test.dir/all
 
 # Include target in all.
-all: CMakeFiles/leveldbutil.dir/all
+all: CMakeFiles/db_test.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/leveldbutil.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles 43
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/leveldbutil.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/leveldbutil.dir/rule
+CMakeFiles/db_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles 43
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/db_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/db_test.dir/rule
 
 # Convenience name for target.
-leveldbutil: CMakeFiles/leveldbutil.dir/rule
+db_test: CMakeFiles/db_test.dir/rule
 
-.PHONY : leveldbutil
-
-# clean rule for target.
-CMakeFiles/leveldbutil.dir/clean:
-	$(MAKE) -f CMakeFiles/leveldbutil.dir/build.make CMakeFiles/leveldbutil.dir/clean
-.PHONY : CMakeFiles/leveldbutil.dir/clean
+.PHONY : db_test
 
 # clean rule for target.
-clean: CMakeFiles/leveldbutil.dir/clean
+CMakeFiles/db_test.dir/clean:
+	$(MAKE) -f CMakeFiles/db_test.dir/build.make CMakeFiles/db_test.dir/clean
+.PHONY : CMakeFiles/db_test.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/db_test.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/index_test.dir
+
+# All Build rule for target.
+CMakeFiles/index_test.dir/all: CMakeFiles/leveldb.dir/all
+	$(MAKE) -f CMakeFiles/index_test.dir/build.make CMakeFiles/index_test.dir/depend
+	$(MAKE) -f CMakeFiles/index_test.dir/build.make CMakeFiles/index_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target index_test"
+.PHONY : CMakeFiles/index_test.dir/all
+
+# Include target in all.
+all: CMakeFiles/index_test.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/index_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles 43
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/index_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/index_test.dir/rule
+
+# Convenience name for target.
+index_test: CMakeFiles/index_test.dir/rule
+
+.PHONY : index_test
+
+# clean rule for target.
+CMakeFiles/index_test.dir/clean:
+	$(MAKE) -f CMakeFiles/index_test.dir/build.make CMakeFiles/index_test.dir/clean
+.PHONY : CMakeFiles/index_test.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/index_test.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/db_WriteBatch.dir
+
+# All Build rule for target.
+CMakeFiles/db_WriteBatch.dir/all: CMakeFiles/leveldb.dir/all
+	$(MAKE) -f CMakeFiles/db_WriteBatch.dir/build.make CMakeFiles/db_WriteBatch.dir/depend
+	$(MAKE) -f CMakeFiles/db_WriteBatch.dir/build.make CMakeFiles/db_WriteBatch.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target db_WriteBatch"
+.PHONY : CMakeFiles/db_WriteBatch.dir/all
+
+# Include target in all.
+all: CMakeFiles/db_WriteBatch.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/db_WriteBatch.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles 43
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/db_WriteBatch.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/db_WriteBatch.dir/rule
+
+# Convenience name for target.
+db_WriteBatch: CMakeFiles/db_WriteBatch.dir/rule
+
+.PHONY : db_WriteBatch
+
+# clean rule for target.
+CMakeFiles/db_WriteBatch.dir/clean:
+	$(MAKE) -f CMakeFiles/db_WriteBatch.dir/build.make CMakeFiles/db_WriteBatch.dir/clean
+.PHONY : CMakeFiles/db_WriteBatch.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/db_WriteBatch.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/db_snapshot.dir
+
+# All Build rule for target.
+CMakeFiles/db_snapshot.dir/all: CMakeFiles/leveldb.dir/all
+	$(MAKE) -f CMakeFiles/db_snapshot.dir/build.make CMakeFiles/db_snapshot.dir/depend
+	$(MAKE) -f CMakeFiles/db_snapshot.dir/build.make CMakeFiles/db_snapshot.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target db_snapshot"
+.PHONY : CMakeFiles/db_snapshot.dir/all
+
+# Include target in all.
+all: CMakeFiles/db_snapshot.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/db_snapshot.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles 43
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/db_snapshot.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/db_snapshot.dir/rule
+
+# Convenience name for target.
+db_snapshot: CMakeFiles/db_snapshot.dir/rule
+
+.PHONY : db_snapshot
+
+# clean rule for target.
+CMakeFiles/db_snapshot.dir/clean:
+	$(MAKE) -f CMakeFiles/db_snapshot.dir/build.make CMakeFiles/db_snapshot.dir/clean
+.PHONY : CMakeFiles/db_snapshot.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/db_snapshot.dir/clean
 
 .PHONY : clean
 

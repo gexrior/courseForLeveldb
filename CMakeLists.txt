@@ -252,3 +252,13 @@ add_executable(index_test
   "${PROJECT_SOURCE_DIR}/value_index/index_test.cpp"
         )
 target_link_libraries(index_test leveldb)
+
+add_executable(db_WriteBatch
+        "${PROJECT_SOURCE_DIR}/test/db_WriteBatch.cc"
+        )
+target_link_libraries(db_WriteBatch leveldb)
+
+add_executable(db_snapshot
+        "${PROJECT_SOURCE_DIR}/test/db_snapshot.cc"
+        )
+target_link_libraries(db_snapshot leveldb)

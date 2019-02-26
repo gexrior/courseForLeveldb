@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=c++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/rui/Git/leveldb/cmake-build-debug/include -I/home/rui/Git/leveldb -I/home/rui/Git/leveldb/include 
+CXX_INCLUDES = -I/home/rui/Git/courseForLeveldb/cmake-build-debug/include -I/home/rui/Git/courseForLeveldb -I/home/rui/Git/courseForLeveldb/include 
 

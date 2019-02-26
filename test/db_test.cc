@@ -6,22 +6,22 @@ using namespace std;
 using namespace leveldb;
 
 int main() {
-    DB* db = nullptr;
-    Options op;
-    op.create_if_missing = true;
-    Status status = DB::Open(op, "testdb", &db);
-    assert(status.ok());
-    db->Put(WriteOptions(), "hello", "not world");
-    string s;
-    db->Get(ReadOptions(), "hello", &s);
-    cout<<s<<endl;
+  //opening a database
+  leveldb::DB* db;
+  leveldb::Options options;
+  options.create_if_missing = true;
+  leveldb::Status status = leveldb::DB::Open(options, "testdb", &db);
+  assert(status.ok());
 
-    db->Put(WriteOptions(), "hello", "not world");
-    string s1;
-    db->Get(ReadOptions(), "hello", &s1);
-    cout<<s1<<endl;
+  std::string key1="book";
+  std::string value1="algorithm";
+  std::string value;
+  db->Put(WriteOptions(),key1,value1);
+  db->Get(ReadOptions(),key1,&value);
+  std::cout<<"key:"<<key1<<",value:"<<value<<std::endl;
 
 
-    delete db;
-    return 0;
+  delete db;
+
+  return 0;
 }

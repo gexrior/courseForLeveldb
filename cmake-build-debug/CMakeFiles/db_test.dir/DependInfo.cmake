@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/rui/Git/leveldb/test/db_test.cc" "/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/db_test.dir/test/db_test.cc.o"
+  "/home/rui/Git/courseForLeveldb/test/db_test.cc" "/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/db_test.dir/test/db_test.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/leveldb.dir/DependInfo.cmake"
+  "/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/leveldb.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

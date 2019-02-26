@@ -48,10 +48,10 @@ RM = /home/rui/software/clion/clion-2018.3.2/bin/cmake/linux/bin/cmake -E remove
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rui/Git/leveldb
+CMAKE_SOURCE_DIR = /home/rui/Git/courseForLeveldb
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rui/Git/leveldb/cmake-build-debug
+CMAKE_BINARY_DIR = /home/rui/Git/courseForLeveldb/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/leveldb/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,30 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named index_test
+# Target rules for targets named leveldbutil
 
 # Build rule for target.
-index_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 index_test
-.PHONY : index_test
+leveldbutil: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 leveldbutil
+.PHONY : leveldbutil
 
 # fast build rule for target.
-index_test/fast:
-	$(MAKE) -f CMakeFiles/index_test.dir/build.make CMakeFiles/index_test.dir/build
-.PHONY : index_test/fast
-
-#=============================================================================
-# Target rules for targets named db_test
-
-# Build rule for target.
-db_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 db_test
-.PHONY : db_test
-
-# fast build rule for target.
-db_test/fast:
-	$(MAKE) -f CMakeFiles/db_test.dir/build.make CMakeFiles/db_test.dir/build
-.PHONY : db_test/fast
+leveldbutil/fast:
+	$(MAKE) -f CMakeFiles/leveldbutil.dir/build.make CMakeFiles/leveldbutil.dir/build
+.PHONY : leveldbutil/fast
 
 #=============================================================================
 # Target rules for targets named leveldb
@@ -150,17 +137,56 @@ leveldb/fast:
 .PHONY : leveldb/fast
 
 #=============================================================================
-# Target rules for targets named leveldbutil
+# Target rules for targets named db_test
 
 # Build rule for target.
-leveldbutil: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 leveldbutil
-.PHONY : leveldbutil
+db_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 db_test
+.PHONY : db_test
 
 # fast build rule for target.
-leveldbutil/fast:
-	$(MAKE) -f CMakeFiles/leveldbutil.dir/build.make CMakeFiles/leveldbutil.dir/build
-.PHONY : leveldbutil/fast
+db_test/fast:
+	$(MAKE) -f CMakeFiles/db_test.dir/build.make CMakeFiles/db_test.dir/build
+.PHONY : db_test/fast
+
+#=============================================================================
+# Target rules for targets named index_test
+
+# Build rule for target.
+index_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 index_test
+.PHONY : index_test
+
+# fast build rule for target.
+index_test/fast:
+	$(MAKE) -f CMakeFiles/index_test.dir/build.make CMakeFiles/index_test.dir/build
+.PHONY : index_test/fast
+
+#=============================================================================
+# Target rules for targets named db_WriteBatch
+
+# Build rule for target.
+db_WriteBatch: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 db_WriteBatch
+.PHONY : db_WriteBatch
+
+# fast build rule for target.
+db_WriteBatch/fast:
+	$(MAKE) -f CMakeFiles/db_WriteBatch.dir/build.make CMakeFiles/db_WriteBatch.dir/build
+.PHONY : db_WriteBatch/fast
+
+#=============================================================================
+# Target rules for targets named db_snapshot
+
+# Build rule for target.
+db_snapshot: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 db_snapshot
+.PHONY : db_snapshot
+
+# fast build rule for target.
+db_snapshot/fast:
+	$(MAKE) -f CMakeFiles/db_snapshot.dir/build.make CMakeFiles/db_snapshot.dir/build
+.PHONY : db_snapshot/fast
 
 db/builder.o: db/builder.cc.o
 
@@ -864,6 +890,60 @@ table/two_level_iterator.cc.s:
 	$(MAKE) -f CMakeFiles/leveldb.dir/build.make CMakeFiles/leveldb.dir/table/two_level_iterator.cc.s
 .PHONY : table/two_level_iterator.cc.s
 
+test/db_WriteBatch.o: test/db_WriteBatch.cc.o
+
+.PHONY : test/db_WriteBatch.o
+
+# target to build an object file
+test/db_WriteBatch.cc.o:
+	$(MAKE) -f CMakeFiles/db_WriteBatch.dir/build.make CMakeFiles/db_WriteBatch.dir/test/db_WriteBatch.cc.o
+.PHONY : test/db_WriteBatch.cc.o
+
+test/db_WriteBatch.i: test/db_WriteBatch.cc.i
+
+.PHONY : test/db_WriteBatch.i
+
+# target to preprocess a source file
+test/db_WriteBatch.cc.i:
+	$(MAKE) -f CMakeFiles/db_WriteBatch.dir/build.make CMakeFiles/db_WriteBatch.dir/test/db_WriteBatch.cc.i
+.PHONY : test/db_WriteBatch.cc.i
+
+test/db_WriteBatch.s: test/db_WriteBatch.cc.s
+
+.PHONY : test/db_WriteBatch.s
+
+# target to generate assembly for a file
+test/db_WriteBatch.cc.s:
+	$(MAKE) -f CMakeFiles/db_WriteBatch.dir/build.make CMakeFiles/db_WriteBatch.dir/test/db_WriteBatch.cc.s
+.PHONY : test/db_WriteBatch.cc.s
+
+test/db_snapshot.o: test/db_snapshot.cc.o
+
+.PHONY : test/db_snapshot.o
+
+# target to build an object file
+test/db_snapshot.cc.o:
+	$(MAKE) -f CMakeFiles/db_snapshot.dir/build.make CMakeFiles/db_snapshot.dir/test/db_snapshot.cc.o
+.PHONY : test/db_snapshot.cc.o
+
+test/db_snapshot.i: test/db_snapshot.cc.i
+
+.PHONY : test/db_snapshot.i
+
+# target to preprocess a source file
+test/db_snapshot.cc.i:
+	$(MAKE) -f CMakeFiles/db_snapshot.dir/build.make CMakeFiles/db_snapshot.dir/test/db_snapshot.cc.i
+.PHONY : test/db_snapshot.cc.i
+
+test/db_snapshot.s: test/db_snapshot.cc.s
+
+.PHONY : test/db_snapshot.s
+
+# target to generate assembly for a file
+test/db_snapshot.cc.s:
+	$(MAKE) -f CMakeFiles/db_snapshot.dir/build.make CMakeFiles/db_snapshot.dir/test/db_snapshot.cc.s
+.PHONY : test/db_snapshot.cc.s
+
 test/db_test.o: test/db_test.cc.o
 
 .PHONY : test/db_test.o
@@ -1330,11 +1410,13 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... index_test"
-	@echo "... db_test"
-	@echo "... leveldb"
-	@echo "... edit_cache"
 	@echo "... leveldbutil"
+	@echo "... leveldb"
+	@echo "... db_test"
+	@echo "... index_test"
+	@echo "... edit_cache"
+	@echo "... db_WriteBatch"
+	@echo "... db_snapshot"
 	@echo "... db/builder.o"
 	@echo "... db/builder.i"
 	@echo "... db/builder.s"
@@ -1413,6 +1495,12 @@ help:
 	@echo "... table/two_level_iterator.o"
 	@echo "... table/two_level_iterator.i"
 	@echo "... table/two_level_iterator.s"
+	@echo "... test/db_WriteBatch.o"
+	@echo "... test/db_WriteBatch.i"
+	@echo "... test/db_WriteBatch.s"
+	@echo "... test/db_snapshot.o"
+	@echo "... test/db_snapshot.i"
+	@echo "... test/db_snapshot.s"
 	@echo "... test/db_test.o"
 	@echo "... test/db_test.i"
 	@echo "... test/db_test.s"
