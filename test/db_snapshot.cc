@@ -8,7 +8,7 @@
 using namespace std;
 using namespace leveldb;
 
-int main1() {
+int main() {
   //opening a database
   leveldb::DB *db;
   leveldb::Options options;
@@ -33,6 +33,7 @@ int main1() {
   assert(status.ok());
   std::cout<<value<<std::endl;
   db->ReleaseSnapshot(readoptions.snapshot);
+
   delete db;
 
   return 0;

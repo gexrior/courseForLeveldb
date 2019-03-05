@@ -9,7 +9,7 @@
 
 using namespace leveldb;
 
-int main2(){
+int main(){
   //opening a database
   leveldb::DB *db;
   leveldb::Options options;
@@ -38,7 +38,7 @@ int main2(){
 
   leveldb::Iterator *iter=db->NewIterator(leveldb::ReadOptions());
   for(iter->SeekToFirst();iter->Valid();iter->Next())
-  {
+  { 
     std::cout<<iter->key().ToString()<<":"<<iter->value().ToString()<<std::endl;
   }
   delete iter;

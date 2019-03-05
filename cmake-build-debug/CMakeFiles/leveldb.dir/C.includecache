@@ -6,25 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/rui/Git/courseForLeveldb/value_index/kdtree.c
-config.h
--
-stdio.h
--
-stdlib.h
--
-string.h
--
-math.h
--
-alloca.h
--
-kdtree.h
-/home/rui/Git/courseForLeveldb/value_index/kdtree.h
-malloc.h
--
-pthread.h
--
-
-/home/rui/Git/courseForLeveldb/value_index/kdtree.h
-

@@ -52,6 +52,9 @@ class SkipList {
   // REQUIRES: nothing that compares equal to key is currently in the list.
   void Insert(const Key& key);
 
+  // Print skip list row by row.
+  void PrintTable();
+
   // Returns true iff an entry that compares equal to key is in the list.
   bool Contains(const Key& key) const;
 
@@ -367,6 +370,12 @@ void SkipList<Key,Comparator>::Insert(const Key& key) {
     x->NoBarrier_SetNext(i, prev[i]->NoBarrier_Next(i));
     prev[i]->SetNext(i, x);
   }
+
+  PrintTable();
+}
+
+void PrintTable(){
+
 }
 
 template<typename Key, class Comparator>
