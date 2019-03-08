@@ -374,7 +374,40 @@ void SkipList<Key,Comparator>::Insert(const Key& key) {
 
 template<typename Key, class Comparator>
 void SkipList<Key,Comparator>::PrintTable() {
+  for (int i = kMaxHeight - 1; i >= 0 ; i--) {
+    Node* start = head_->NoBarrier_Next(i);
+    if (start == nullptr) {
+      continue;
+    }
+    Node* next = start;
+    for (int j = 0; next != nullptr; j++) {
+      // print key
+      uint32_t key_length;
+      const char* k = next->key;
+      k = GetVarint32Ptr(k, k + 5, &key_length);  // +5: we assume "k" is not corrupted
+      std::string key = std::string(k, key_length - 8);
+      printf("%s", key.data());
 
+      // print value
+      const uint64_t tag = DecodeFixed64(k + key_length - 8);
+      switch (static_cast<ValueType>(tag & 0xff)) {
+        case kTypeValue: {
+          uint32_t value_length;
+          const char* v = k + key_length;
+          v = GetVarint32Ptr(v, v + 5, &value_length);
+          std::string value = std::string(v, value_length);
+          printf(":%s\t", value.data());
+          break;
+        }
+        case kTypeDeletion:
+          printf(":del\t");
+          break;
+      }
+      next = next->NoBarrier_Next(i);
+    }
+    printf("\n");
+  }
+  printf("------------PRINT------------\n");
 }
 
 template<typename Key, class Comparator>
