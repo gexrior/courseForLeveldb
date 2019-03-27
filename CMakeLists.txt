@@ -262,3 +262,8 @@ add_executable(db_snapshot
         "${PROJECT_SOURCE_DIR}/test/db_snapshot.cc"
         )
 target_link_libraries(db_snapshot leveldb)
+
+add_executable(sst_test
+        "${PROJECT_SOURCE_DIR}/test/sst_test.cpp"
+        )
+target_link_libraries(sst_test leveldb)
