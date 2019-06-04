@@ -1,88 +1,82 @@
 //
-// Created by rui on 19-5-31.
+// Created by rui on 19-5-29.
 //
+
+#include "leveldb/db.h"
+#include <cstdio>
 #include <iostream>
-#include <map>
-#include <string>
-#include <vector>
+#include <include/leveldb/write_batch.h>
 #include <fstream>
+#include <sstream>
+#include <map>
 
-using  namespace std;
 
-void swap(int a ,int b)
+using namespace std;
+using namespace leveldb;
+
+string Trim(string& str)
 {
-  int m ;
-  m = a;
-  a = b;
-  b = m;
-}
-
-void perm(vector<int> list,int k, int m )
-{
-  int i;
-  if(k > m)
-  {
-    for(i = 0 ; i <= m ; i++)
-    {
-      cout<<list[i]<<" ";
-
-    }
-    cout<<endl;
-
-  }
-  else
-  {
-    for(i = k ; i <= m;i++)
-    {
-      swap(list[k],list[i]);
-      perm(list,k+1,m);
-      swap(list[k],list[i]);
-    }
-  }
+  str.erase(0,str.find_first_not_of(" \t\r\n"));
+  str.erase(str.find_last_not_of(" \t\r\n") + 1);
+  return str;
 }
 
 
-int main(int argc, char **argv) {
-  std::multimap<std::string,int> mmap;
-  vector<int> val;
-  mmap.insert(std::make_pair("XUR@ecnu.cn",1 ));
-  mmap.insert(std::make_pair("XME@sjtu.cn",8));
-  mmap.insert(std::make_pair("XUR@ecnu.cn",2));
-  mmap.insert(std::make_pair("WAM@ecnu.cn",3));
-  mmap.insert(std::make_pair("XUR@ecnu.cn",6));
-  mmap.insert(std::make_pair("MMM@ecnu.cn",14));
-  mmap.insert(std::make_pair("CMA@fudan.cn",7));
-  std::multimap<std::string,int>::iterator it;
+int main(){
+  //opening a database
+  leveldb::DB *db;
+  leveldb::Options options;
+  options.create_if_missing=true;
+  options.compression = kNoCompression;
+  leveldb::Status status=leveldb::DB::Open(options,"dbindex",&db);
+  assert(status.ok());
 
+  ifstream fin("../index_test/TestData.csv");
+  string line;
+  while (getline(fin, line))
+  {
 
-  // 统计key为"XUR@ecnu.cn"的数目
-  std::string strFind = "XUR@ecnu.cn";
-  unsigned int uCount = mmap.count(strFind);
-  if (uCount == 0)
-  {
-    std::cout << "Count " << strFind << ":0"<< std::endl;
-  }
-  else
-  {
-    std::cout << "Count " << strFind << ":" << uCount << std::endl;
-    std::multimap<std::string, int>::iterator it = mmap.find(strFind);
-    if (it != mmap.end())
+    istringstream sin(line);
+    vector<string> fields;
+    string field;
+    while (getline(sin, field, ','))
     {
-      for (unsigned int i = 0; i < uCount; ++i)
-      {
-        val.push_back((*it).second);
-        it++;
-      }
+      fields.push_back(field);
     }
+    string key = Trim(fields[0]);
+    string value = Trim(fields[1]);
+    status=db->Put(leveldb::WriteOptions(),key,value);
+    assert(status.ok());
   }
 
-  //排列
-  //use perm() to diy personal settings
-  for(int i = 0; i < val.size(); i++){
-    for(int j = i +1; j <val.size(); j++){
-      cout << val[i] << ", " << val[j] << endl;
-    }
+  std::multimap<std::string,std::string> mmap;
+  vector<std::string> val;
+
+
+  //iterator
+  leveldb::Iterator *iter=db->NewIterator(leveldb::ReadOptions());
+  for(iter->SeekToFirst();iter->Valid();iter->Next())
+  {
+    mmap.insert(std::make_pair(iter->value().ToString(),iter->key().ToString()));
   }
 
+
+  std::string strFind = "KOS@ecnu.cn";
+  std::multimap<std::string, std::string>::iterator it = mmap.find(strFind);
+
+  if(it !=mmap.end())
+  {
+    for(unsigned int i = 0; i < mmap.count(strFind); ++i){
+      cout<<it->second<<endl;
+      ++it;
+    }
+
+  }
+
+  for(int i =0;i < val.size();i++)
+    cout << val[i] << " " ;
+
+
+  delete iter;
   return 0;
 }
