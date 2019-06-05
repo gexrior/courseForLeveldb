@@ -31,6 +31,7 @@ int main(){
   leveldb::Status status=leveldb::DB::Open(options,"dbindex",&db);
   assert(status.ok());
 
+  //input data
   ifstream fin("../index_test/TestData.csv");
   string line;
   while (getline(fin, line))
@@ -50,31 +51,14 @@ int main(){
   }
 
   std::multimap<std::string,std::string> mmap;
-  vector<std::string> val;
 
-
-  //iterator
+  // iterator
   leveldb::Iterator *iter=db->NewIterator(leveldb::ReadOptions());
   for(iter->SeekToFirst();iter->Valid();iter->Next())
   {
     mmap.insert(std::make_pair(iter->value().ToString(),iter->key().ToString()));
   }
 
-
-  std::string strFind = "KOS@ecnu.cn";
-  std::multimap<std::string, std::string>::iterator it = mmap.find(strFind);
-
-  if(it !=mmap.end())
-  {
-    for(unsigned int i = 0; i < mmap.count(strFind); ++i){
-      cout<<it->second<<endl;
-      ++it;
-    }
-
-  }
-
-  for(int i =0;i < val.size();i++)
-    cout << val[i] << " " ;
 
 
   delete iter;
