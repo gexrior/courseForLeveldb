@@ -7,6 +7,8 @@
 
 #include <deque>
 #include <set>
+#include <port/port.h>
+#include <port/atomic_pointer.h>
 #include "db/dbformat.h"
 #include "db/log_writer.h"
 #include "db/snapshot.h"
@@ -199,6 +201,7 @@ class DBImpl : public DB {
   const Comparator* user_comparator() const {
     return internal_comparator_.user_comparator();
   }
+
 };
 
 // Sanitize db options.  The caller should delete result.info_log if
@@ -207,6 +210,8 @@ Options SanitizeOptions(const std::string& db,
                         const InternalKeyComparator* icmp,
                         const InternalFilterPolicy* ipolicy,
                         const Options& src);
+
+
 
 }  // namespace leveldb
 

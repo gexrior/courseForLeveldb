@@ -249,8 +249,7 @@ add_executable(db_test
 target_link_libraries(db_test leveldb)
 
 add_executable(index_test
-  "${PROJECT_SOURCE_DIR}/value_index/index_test.cpp"
-        )
+  "${PROJECT_SOURCE_DIR}/value_index/index_test.cpp")
 target_link_libraries(index_test leveldb)
 
 add_executable(db_WriteBatch
@@ -260,10 +259,30 @@ target_link_libraries(db_WriteBatch leveldb)
 
 add_executable(db_snapshot
         "${PROJECT_SOURCE_DIR}/test/db_snapshot.cc"
-        )
+        test/db_index.cc)
 target_link_libraries(db_snapshot leveldb)
 
 add_executable(sst_test
         "${PROJECT_SOURCE_DIR}/test/sst_test.cpp"
         )
 target_link_libraries(sst_test leveldb)
+
+add_executable(db_index
+        "${PROJECT_SOURCE_DIR}/test/db_index.cc"
+        )
+target_link_libraries(db_index leveldb)
+
+add_executable(mmap_test
+        "${PROJECT_SOURCE_DIR}/test/mmap_test.cc"
+        )
+target_link_libraries(mmap_test leveldb)
+
+add_executable(multimap_test
+        "${PROJECT_SOURCE_DIR}/index_test/multimap_test.cc"
+        )
+target_link_libraries(multimap_test leveldb)
+
+add_executable(test_seek
+        "${PROJECT_SOURCE_DIR}/index_test/test_seek.cc"
+        )
+target_link_libraries(test_seek leveldb)

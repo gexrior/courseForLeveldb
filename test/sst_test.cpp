@@ -103,7 +103,7 @@ int main() {
   //cout << index[indexSize] << endl;
 
   //read the block
-  BlockContents* result;
+  BlockContents* result = new BlockContents();
   result->data = string();
   result->cachable = false;
   result->heap_allocated = false;

@@ -59,6 +59,17 @@ int main(){
     mmap.insert(std::make_pair(iter->value().ToString(),iter->key().ToString()));
   }
 
+  // find string
+  std::string strFind = "KOS@ecnu.cn";
+  std::multimap<std::string, std::string>::iterator it = mmap.find(strFind);
+
+  if(it !=mmap.end())
+  {
+    for(unsigned int i = 0; i < mmap.count(strFind); ++i){
+      cout<<it->second<<endl;
+      ++it;
+    }
+  }
 
 
   delete iter;

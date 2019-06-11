@@ -1,4 +1,9 @@
+/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/test_seek.dir
 /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/db_index.dir
+/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/sst_test.dir
+/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/multimap_test.dir
+/home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/mmap_test.dir
 /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/leveldbutil.dir
 /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/leveldb.dir
 /home/rui/Git/courseForLeveldb/cmake-build-debug/CMakeFiles/db_test.dir

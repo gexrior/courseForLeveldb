@@ -112,6 +112,8 @@ class Version {
   // Return a human readable string that describes this version's contents.
   std::string DebugString() const;
 
+  //std::vector<FileMetaData*> retfiles_();
+
  private:
   friend class Compaction;
   friend class VersionSet;

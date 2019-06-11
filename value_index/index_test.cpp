@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main() {
+int main1() {
 
     double p1[] = {5, 5};
     double p2[] = {2, 2};
